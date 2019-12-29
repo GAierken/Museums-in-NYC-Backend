@@ -130,3 +130,4 @@ Review.create(content: "Amazing experience!", user: u1, museum: met)
 Review.create(content: "Special experience!", user: u1, museum: moma)
 Review.create(content: "Cool!", user: u2, museum: met)
 Review.create(content: "Deep!", user: u2, museum: moma)
+
