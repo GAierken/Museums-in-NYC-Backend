@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_29_201318) do
+ActiveRecord::Schema.define(version: 2019_12_29_204233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dislikes", force: :cascade do |t|
+    t.integer "dislikes"
+    t.bigint "museum_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["museum_id"], name: "index_dislikes_on_museum_id"
+    t.index ["user_id"], name: "index_dislikes_on_user_id"
+  end
 
   create_table "likes", force: :cascade do |t|
     t.integer "likes"
@@ -53,6 +63,8 @@ ActiveRecord::Schema.define(version: 2019_12_29_201318) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "dislikes", "museums"
+  add_foreign_key "dislikes", "users"
   add_foreign_key "likes", "museums"
   add_foreign_key "likes", "users"
   add_foreign_key "reviews", "museums"

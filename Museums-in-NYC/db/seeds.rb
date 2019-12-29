@@ -10,6 +10,7 @@ Museum.destroy_all
 User.destroy_all
 Review.destroy_all
 Like.destroy_all
+Dislike.destroy_all
 puts "Making new seeds"
 ### Museums######
 met = Museum.create(name: "The Metropolitan Museum of Art", address: "1000 5th Ave, New York, NY 10028", description: "The Met presents over 5,000 years of art from around the world for everyone to experience and enjoy. The Museum lives in three iconic sites in New York City—The Met Fifth Avenue, The Met Breuer, and The Met Cloisters. Millions of people also take part in The Met experience online. Since it was founded in 1870, The Met has always aspired to be more than a treasury of rare and beautiful objects. Every day, art comes alive in the Museum's galleries and through its exhibitions and events, revealing both new ideas and unexpected connections across time and across cultures.", image_url: "https://www.metmuseum.org/-/media/images/visit/plan-your-visit/individual-locations/fifth-avenue/fifthave_1520x1520.jpg?as=1&la=en&mh=3040&mw=3040&hash=B1EA90DB4676B82D60470BBEDD6458F9", hours:"Sunday – Thursday: 10:00 am – 5:30 pm
@@ -140,4 +141,7 @@ puts "finished reviews"
 Like.create(likes: 1, user: u1, museum: met)
 Like.create(likes: 1, user: u2, museum: met)
 puts "finished likes"
-
+#### Dislikes
+Dislike.create(dislikes: 1, user: u1, museum: design)
+Dislike.create(dislikes: 1, user: u2, museum: design)
+puts "finished dislikes"
