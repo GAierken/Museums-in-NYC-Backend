@@ -126,8 +126,8 @@ Fri - Wed
 puts "finished Museums"
 
 ###### Users
-u1 = User.create(name: "Gena", email: "gena@163.com")
-u2 = User.create(name: "Kaiser", email: "kayser@126.com")
+u1 = User.create(name: "Gena")
+u2 = User.create(name: "Kaiser")
 puts "finished users"
 
 ##### Review
