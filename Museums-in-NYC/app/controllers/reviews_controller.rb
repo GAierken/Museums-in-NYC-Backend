@@ -9,4 +9,12 @@ class ReviewsController < ApplicationController
         review = Review.find(params[:id])
         render json:review
     end 
+
+    def create
+        review = Review.create(review_params)
+        render json: review
+    end 
+
+    private 
+    params.require(:review).permit(:content, :user_id, :museum_id)
 end
