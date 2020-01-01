@@ -1,5 +1,4 @@
 class ReviewSerializer < ActiveModel::Serializer
-  attributes :id, :content
-  # has_one :user
-  # has_one :museum
+  attributes :id, :content, :museum_id, :user_id
+  
 end

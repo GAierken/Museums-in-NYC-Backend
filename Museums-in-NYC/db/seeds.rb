@@ -131,10 +131,78 @@ u2 = User.create(name: "Kaiser")
 puts "finished users"
 
 ##### Review
+reviews = [
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Informative",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample},
+    {content: "Beautiful",
+    user: User.all.sample,
+    museum: Museum.all.sample}
+    
+]
 Review.create(content: "Amazing experience!", user: u1, museum: met)
 Review.create(content: "Special experience!", user: u1, museum: moma)
 Review.create(content: "Cool!", user: u2, museum: met)
 Review.create(content: "Deep!", user: u2, museum: moma)
+Review.create(reviews)
+
 puts "finished reviews"
 ###### Likes
 
