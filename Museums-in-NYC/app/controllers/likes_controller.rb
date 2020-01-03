@@ -10,12 +10,12 @@ class LikesController < ApplicationController
      end 
      
      def create
-        dislike = Like.create(like_params)
-        render json: dislike
+        like = Like.create(like_params)
+        render json: like
      end 
 
     private 
     def like_params
-        params.require(:like).permit(:likes, :user_id, :museum_id)
+        params.permit(:likes, :user_id, :museum_id)
     end
 end
