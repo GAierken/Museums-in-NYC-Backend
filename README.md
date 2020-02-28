@@ -21,4 +21,4 @@ Ruby, Rails, SQL, active_model_serializers
 [Demo Video](https://www.youtube.com/watch?v=1PeeuhozAIo&feature=youtu.be)
 
 
-![alt text](https://github.com/GAierken/Flatiron-Shopping-Frontend/raw/master/Shopping.gif "Flatiron Shopping")
+![alt text](https://github.com/GAierken/Museums-in-NYC-Frontend/raw/master/Museums.gif "Flatiron Shopping")
